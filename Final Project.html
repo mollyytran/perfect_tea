@@ -1,0 +1,196 @@
+<!--Molly Tran-->
+<!--CS 80 Final Project-->
+
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+
+    <title>Perfect Tea</title>
+    <meta charset = "UTF-8">
+    <meta  name ="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+
+<body>
+
+    <header>
+        <h1>Perfect Tea</h1>
+        <p>est. 2023</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!--Brief Summary about Perfect Tea-->
+        <div id="about">
+            <h2>About Us</h2>
+            <p>
+                At Perfect Tea, we draw our inspiration from our most recent journey to India. Our founders, Natalia and Danielle, embarked on this adventure, and their love for tea culture and exquisite flavors led them to establish Perfect Tea in the early months of 2023.
+            </p>
+            <p>
+                We hold a strong belief that tea should be savored in its purest form before considering any sweeteners or additives. With a commitment to delivering an authentic tea experience, every cup is freshly brewed to order. Our tea selection features an array of handpicked blends, each curated to captivate your senses and transport you to a world of delightful aromas and tastes.
+            </p>
+        </div>
+
+        <!-- Menu with description and image of each type of teas-->
+        <div id="menu">
+            <h2>Menu</h2>
+        
+            <div class="teas">
+
+                <div class="chaitea">
+                <p><strong>Masala Chai Tea</strong>
+                    <p>Strong black tea with spices including cardamom, cinnamon, cloves, ginger</p>
+                    <img src= "ChaiTeaLeaves.jpg" alt="Chai Tea Leaves" title="Image from The Tea Smith - https://www.theteasmith.com">
+                </div>
+
+                <div class="earlgrey">
+                <p><strong>Earl Grey Tea</strong>
+                    <p>Classic black tea with essence of bergamot, a type of citrus fruit</p>
+                    <img src="EarlGreyTeaLeaves.jpg" alt="Earl Grey Tea Leaves" title="Image from The Tea Smith - https://www.theteasmith.com">
+                </div>
+
+                <div class="greentea">
+                <p><strong>Green Tea</strong><br>
+                    <p>Mild and subtly sweet tea, known for its light and  vegetal flavor</p>
+                    <img src="GreenTeaLeaves.jpg" alt="Green Tea Leaves" title="Image from The Tea Smith - https://www.theteasmith.com">
+                </div>
+
+                <div class="whitetea">
+                    <p><strong>White Tea</strong><br>
+                    <p>Contains the least amount of caffeine, hints of delicate and subtle floral notes</p>
+                    <img src="WhiteTeaLeaves.jpg" alt="White Tea Leaves" title="Image from The Tea Smith - https://www.theteasmith.com">
+                </div>
+                
+                <div class ="assamtea">
+                    <p><strong>Assam Tea</strong><br>
+                    <p>Robust black tea, strong malty taste with hints of sweetness </p>
+                    <img src="AssamTeaLeaves.jpg" alt="Assam Tea Leaves" title="Image from The Tea Smith - https://www.theteasmith.com">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!--Form to place an order online-->
+    <div id="order">
+        <form action="orderconfirm.html" method="POST" id="orderform">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3" class="orderform">Order Form</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                    </tr>
+
+                    <tr>
+                        <th>Tea Selection</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><label for="chaitea">Masala Chai Tea</label></td>
+                        <td><input type="number" id="chaitea" name="quantity" min="0"></td>
+                        <td>$5.50</td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="earlgrey">Earl Grey Tea</label></td>
+                        <td><input type="number" id="earlgrey" name="quantity" min="0"></td>
+                        <td>$5.00</td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="greentea">Green Tea</label></td>
+                        <td><input type="number" id="greentea" name="quantity" min="0"></td>
+                        <td>$4.50</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="whitetea">White Tea</label></td>
+                        <td><input type="number" id="whitetea" name="quantity" min="0"></td>
+                        <td>$4.50</td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="assamtea">Assam Tea</label></td>
+                        <td><input type="number" id="assamtea" name="quantity" min="0"></td>
+                        <td>$5.00</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label><strong>Name:</strong></label></td>
+                        <td colspan="2"><input type="text" id="name" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label><strong>Phone Number:</strong></label></td>
+                        <td colspan="2"><input type="text" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX"></td>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td><label><strong>Total Cost:</strong></label></td>
+                        <td colspan="2"><input type="text" id="total"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="1"></td>
+                        <td colspan="2"><input type="submit" value="Place Order" class="submit"></td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+        
+        </form>
+    </div>
+    
+    <footer>
+        
+        <!--Additional contact information and operating hours-->
+        <div class = "contact" id="contact">
+            <h2>Contact Us</h2><br>
+            <h4>Address:</h4> 2256 Circle Drive Unit C<br>
+            Houston, TX 77032<br>
+            <h4>Phone Number:</h4> 823-573-7531
+        </div>
+
+        <div class="openinghours">
+            <h2>Opening Hours</h2><br>
+            <h4>Monday - Friday: </h4>7:00am -2:00pm<br>
+            <h4>Saturday: </h4>7:00am -3:00pm<br>
+            <h4>Sunday: </h4><em>Closed</em>
+        </div>
+
+        <div class="connect">
+            <h2>Connect With Us</h2><br>
+            <h4>Instagram</h4><a href="https://www.instagram.com/"><img src="Instagramlogo.jpg" alt="Instagram logo" width="22" height="22"></a>
+            <h4>Facebook</h4><a href="https://www.facebook.com/"><img src="Facebooklogo.png" alt="Facebook logo" width="45" height="28"></a>
+            <h4>Yelp</h4><a href="https://www.yelp.com/"><img src="Yelplogo.png" alt="Yelp logo" width="23" height="23"></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

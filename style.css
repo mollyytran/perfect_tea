@@ -1,0 +1,132 @@
+body{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    font-size: 50px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    /*Image attribution: Photo from Adobe Stock #276837004 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0,0,0,0.25)), url('teaheader.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    overflow: hidden;
+    background-color: whitesmoke;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    color: white; 
+    float: none;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a {
+    padding:20px;
+    font-size: 20px;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#about {
+    margin: 20px;
+}
+
+#menu {
+    margin-left: 20px;
+}
+
+#openinghours {
+    margin: 20px;
+    max-width: 50%;
+    height: 50vh;
+    flex: 50%;
+    display:block;
+}
+
+#contact {
+    scroll-behavior: smooth;
+
+}
+
+div.teas {
+    display: flex;
+    margin: 20px;
+}
+
+div.chaitea, div.earlgrey, div.greentea, div.whitetea, div.assamtea {
+    margin: 10px;
+    max-width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+td{
+    padding:8px;
+}
+
+input[type="submit"]{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #c398bb;
+    color:whitesmoke;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+input[type='number'], input[type='text']{
+    width: 30px;
+    margin-left: 40px;
+} 
+
+#order {
+    background-color: whitesmoke;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;    
+}
+
+#orderform{
+    /* Minimal Background attribution: Image from www.takingroute.net*/
+    background: url('Minimal Background.jpg');
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th.orderform{
+    font-size: 25px;
+}
+
+#total, #name, #phone{
+    width: 100px;
+}
+
+footer{
+    display:flex;
+    justify-content:space-evenly;
+    background-color: whitesmoke;
+}
+
+div.contact, div.openinghours, div.connect{
+    text-align: center;
+    padding: 0px 50px 30px;
+}
